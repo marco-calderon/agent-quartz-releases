@@ -1,0 +1,95 @@
+name: Bug report
+description: Something in AgentQuartz is broken or unexpected.
+title: "[Bug]: "
+labels: ["bug", "needs-triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting a problem. This repo is the **public product surface** (downloads + support). Please do **not** paste API keys, session cookies, or other secrets.
+
+  - type: input
+    id: app-version
+    attributes:
+      label: App version
+      description: Settings → About, or the release tag you installed (e.g. 0.1.10).
+      placeholder: "0.1.10"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: macos-version
+    attributes:
+      label: macOS version
+      options:
+        - macOS 15 (Sequoia)
+        - macOS 14 (Sonoma)
+        - macOS 13 (Ventura)
+        - Other / unsure
+    validations:
+      required: true
+
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      options:
+        - Install / Gatekeeper / first open
+        - Claude usage / auth
+        - Cursor usage / auth
+        - Tray icon / menu bar
+        - Usage panel / popup
+        - Settings
+        - Notifications
+        - Updates / About
+        - Licensing / Pro
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: Clear description of the bug.
+      placeholder: Expected X, but got Y…
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: Minimal steps someone else can follow.
+      placeholder: |
+        1.
+        2.
+        3.
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+      description: What you expected instead.
+    validations:
+      required: false
+
+  - type: textarea
+    id: notes
+    attributes:
+      label: Extra context
+      description: Screenshots, recent changes, provider plan, or anything else useful. Redact secrets.
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: acknowledgements
+    attributes:
+      label: Before submitting
+      options:
+        - label: I am not pasting API keys, cookies, or other secrets.
+          required: true
+        - label: I searched existing issues and did not find a duplicate.
+          required: true

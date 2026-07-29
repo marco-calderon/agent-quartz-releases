@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Download latest release
+    url: https://github.com/marco-calderon/agent-quartz-releases/releases/latest
+    about: Get the newest unsigned macOS .app zip (not for bug reports).
+  - name: Product website
+    url: https://agentquartz.vercel.app
+    about: Marketing site, pricing, changelog, Terms, and Privacy.

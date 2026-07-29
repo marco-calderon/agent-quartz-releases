@@ -1,0 +1,59 @@
+name: Feature request
+description: Suggest an improvement or new capability for AgentQuartz.
+title: "[Feature]: "
+labels: ["enhancement", "needs-triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Share what would make AgentQuartz more useful. Focus on the problem and outcome — implementation details are optional.
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem / motivation
+      description: What are you trying to do that is hard or missing today?
+      placeholder: As a user, I want…
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed solution
+      description: What would a good outcome look like?
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered
+      description: Other approaches or workarounds you already tried.
+    validations:
+      required: false
+
+  - type: dropdown
+    id: area
+    attributes:
+      label: Related area
+      options:
+        - Providers (Claude / Cursor / others)
+        - Tray / menu bar
+        - Usage panel
+        - Notifications
+        - Settings / onboarding
+        - Updates / distribution
+        - Licensing / Pro
+        - Other platforms (Windows / Linux)
+        - Other
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: acknowledgements
+    attributes:
+      label: Before submitting
+      options:
+        - label: I searched existing issues and did not find a duplicate request.
+          required: true

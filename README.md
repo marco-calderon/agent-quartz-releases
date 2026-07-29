@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/logo.png" width="96" height="96" alt="AgentQuartz logo" />
+  <img src="assets/logo-squircle.png" width="96" height="96" alt="AgentQuartz logo" />
 </p>
 
 <h1 align="center">AgentQuartz</h1>
